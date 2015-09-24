@@ -1,0 +1,94 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url(contemporary_china.png);
+}
+
+header {
+  /* border: 1px solid red; */
+  background: #000;
+  color: white;
+}
+h1 {
+  margin: 0;
+  padding: 1em 0.5em;
+  font-size: 2em;
+}
+
+h2 {
+  margin: 0;
+  padding: 1em 0 0;
+  font-size: 1.5em;
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.4;
+  text-indent: 2em;
+}
+
+nav {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 100px;
+  color: white;
+  border: 1px solid gray;
+}
+
+nav h2 {
+  font-size: 1em;
+  padding: 5px;
+  background: gray;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0;
+  display: none;
+  text-align: center;
+  background: #eee;
+}
+nav ul.active {
+  display: block;
+}
+nav li {
+  display: block;
+  list-style: none;
+  padding: 0 0 10px;
+}
+
+main {
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  width: 70%;
+  float: left;
+  padding: 1em;
+}
+
+aside {
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+  float: right;
+  width: 30%;
+  padding: 1em;
+}
+
+footer {
+  /* border: 1px solid pink; */
+  clear: both;
+  padding: 1em;
+  padding-top: 4em;
+}
+
+img {
+  width: 200px;
+}
