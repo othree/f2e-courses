@@ -5,12 +5,13 @@ var AppView = Backbone.View.extend({
   events: {
     "submit #todo-form":    "create",
     "click .item":	    "go",
-    "click .delete":        "destroy"
+    "click .delete":        "remove"
   },
 
   initialize: function() {
     this.todos = new Todos();
     this.listenTo(this.todos, "add", this.render);
+    this.listenTo(this.todos, "remove", this.render);
   },
 
   go: function (event) {
@@ -25,6 +26,12 @@ var AppView = Backbone.View.extend({
     if (title) {
       this.todos.add(new Todo({title: title}));
     }
+  },
+
+  remove: function (event) {
+    event.preventDefault();
+    var id = $(event.target).data('cid');
+    this.todos.remove(id);
   },
 
   enable: function () {

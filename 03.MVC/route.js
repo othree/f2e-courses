@@ -6,16 +6,16 @@ var AppRoute = Backbone.Router.extend({
   },
 
   default: function () {
-		itemView.disable();
-		appView.enable();
-		appView.render();
+    itemView.disable();
+    appView.enable();
+    appView.render();
   },
 
   item: function (id) {
-		var item = appView.todos.get(id);
-		appView.disable();
-		itemView.enable();
-		itemView.render(item);
+    var item = appView.todos.get(id);
+    appView.disable();
+    itemView.enable();
+    itemView.render(item);
   }
 
 });
