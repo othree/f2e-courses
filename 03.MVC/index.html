@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
@@ -11,11 +13,14 @@
     <script id="app-tmpl" type="text/template">
       <ul>
       {{#todos}}
-      <li><a class="item" href="/item/{{id}}">{{title}}</a> [<a href="#delete-{{id}}" class="delete" data-cid="{{id}}">del</a>]</li>
+      <li class="item-block">
+        <a class="item" href="/item/{{id}}">{{title}}</a> 
+        <span class="button">[<a href="#delete-{{id}}" class="delete" data-cid="{{id}}">del</a>]</span>
+      </li>
       {{/todos}}
       </ul>
       <form id="todo-form">
-        <input name="title" />
+        <input type="text" name="title" />
         <input type="submit" value="new" />
       </form>
     </script>
