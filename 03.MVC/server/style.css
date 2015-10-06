@@ -1,0 +1,43 @@
+
+.todo-app {
+  margin: 3em auto;
+  padding: 1em;
+  width: 460px;
+  border: 1px solid gray;
+  background: #eee;
+  box-shadow: 5px 5px 20px black;
+}
+
+.item-block {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0 2px;
+}
+
+.item-block .button {
+  float: right;
+  line-height: 1.8em;
+}
+
+.item {
+  color: #333;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+
+#todo-form {
+  margin-top: 1em;
+}
+#todo-form input[type=text]  {
+  padding: 0 4px;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  height: 45px;
+  border: 1px solid #ccc;
+}
+#todo-form input[type=submit] {
+  padding: 0 6px;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  height: 45px;
+  border: 1px solid #333;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="todo-app"></div>
+    <div class="todo-item"></div>
+
+    <script id="app-tmpl" type="text/template">
+      <ul>
+      {{#todos}}
+      <li class="item-block">
+        <a class="item" href="/item/{{id}}">{{title}}</a> 
+        <span class="button">[<a href="#delete-{{id}}" class="delete" data-cid="{{id}}">del</a>]</span>
+      </li>
+      {{/todos}}
+      </ul>
+      <form id="todo-form">
+        <input type="text" name="title" />
+        <input type="submit" value="new" />
+      </form>
+    </script>
+    <script id="todo-tmpl" type="text/template">
+      <div class="item">{{title}}</div>
+    </script>
+
+    <script src="vendor/mustache.min.js" ></script>
+    <script src="vendor/jquery-1.11.3.min.js" ></script>
+    <script src="vendor/lodash.min.js" ></script>
+    <script src="vendor/backbone-min.js" ></script>
+    <script src="keys.js" ></script>
+    <script src="parse.js" ></script>
+    <script src="model/todo.js" ></script>
+    <script src="collection/todos.js" ></script>
+    <script src="view/app.js" ></script>
+    <script src="view/item.js" ></script>
+    <script src="route.js" ></script>
+    <script src="app.js" ></script>
+
+
+  </body>
+</html>
