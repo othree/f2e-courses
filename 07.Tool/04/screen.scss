@@ -1,0 +1,17 @@
+/* 
+
+Houses First Variation of Variables for Sample
+
+*/
+
+
+
+$color1: #63bdd7;
+$color2: #9c4228;
+$fontcolor1: #333;
+$fontcolor2: #9c4228;
+$border-radius: 7px; 
+
+
+
+@import "basics"; //This command brings in file _basics.scss to consume these variables and output CSS

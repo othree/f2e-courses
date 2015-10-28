@@ -1,0 +1,37 @@
+/* @import "button"; */
+
+body {
+  text-align: center;
+  > #container {
+    text-align:left;
+    margin:0 auto;
+    width:500px;
+  }
+}
+
+
+header {
+  h1 {
+    font-size:26px; margin-bottom:26px;
+  }
+}
+div[role="main"] {
+  /* @include background-image(linear-gradient(lighten($color1, 30%), lighten($color2, 30%))); */
+  /* @include border-radius($border-radius * 3.5, $border-radius * 3.5 );  */
+  border:3px solid $color2;
+  padding:$border-radius;
+  margin-bottom:25px; 
+  
+  ul {
+    padding-top:14px;
+  }
+  li {
+    color:$fontcolor1;
+    margin-bottom:12px;
+  }
+}
+
+button {
+  //leverages the buttons mixin
+  /* @include buttons(); */
+}

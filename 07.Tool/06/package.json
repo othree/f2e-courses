@@ -1,0 +1,17 @@
+{
+  "name": "06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "csswring": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1"
+  }
+}
