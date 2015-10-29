@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- build:css css/combined.css -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div class="todo-app"></div>
+    <div class="todo-item"></div>
+
+    <script id="app-tmpl" type="text/template">
+      <ul>
+      {{#todos}}
+      <li class="item-block">
+        <a class="item" href="/item/{{id}}">{{title}}</a> 
+        <span class="button">[<a href="#delete-{{id}}" class="delete" data-cid="{{id}}">del</a>]</span>
+      </li>
+      {{/todos}}
+      </ul>
+      <form id="todo-form">
+        <input type="text" name="title" />
+        <input type="submit" value="new" />
+      </form>
+    </script>
+    <script id="todo-tmpl" type="text/template">
+      <div class="item">{{title}}</div>
+    </script>
+
+    <!-- build:js scripts/combined.js -->
+    <script src="js/bundle.js" ></script>
+    <!-- endbuild -->
+
+
+  </body>
+</html>

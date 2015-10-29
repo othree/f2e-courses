@@ -1,0 +1,23 @@
+{
+  "name": "06",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "othree <othree@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/othree/f2e-courses",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "mustache.js": "mustache#~2.2.0",
+    "jquery": "^1"
+  }
+}
